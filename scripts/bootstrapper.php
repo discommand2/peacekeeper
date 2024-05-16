@@ -1,10 +1,10 @@
 #!/usr/bin/env php
 <?php
 
-namespace RPurinton\Framework2;
+namespace RPurinton\peacekeeper;
 
-use RPurinton\Framework2\Error;
-use RPurinton\Framework2\Consumers\Bootstrapper;
+use RPurinton\peacekeeper\Error;
+use RPurinton\peacekeeper\Consumers\Bootstrapper;
 
 $worker_id = $argv[1] ?? 0;
 

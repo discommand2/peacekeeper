@@ -1,10 +1,10 @@
 [Unit]
-Description=Framework2 Target
-Wants=framework2-timers.service
-Wants=framework2-consumer@1.service
-Wants=framework2-consumer@2.service
-Wants=framework2-consumer@3.service
-Wants=framework2-consumer@4.service
+Description=peacekeeper Target
+Wants=peacekeeper-timers.service
+Wants=peacekeeper-consumer@1.service
+Wants=peacekeeper-consumer@2.service
+Wants=peacekeeper-consumer@3.service
+Wants=peacekeeper-consumer@4.service
 After=network.target
 
 [Install]

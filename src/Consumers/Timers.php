@@ -1,9 +1,9 @@
 <?php
 
-namespace RPurinton\Framework2\Consumers;
+namespace RPurinton\peacekeeper\Consumers;
 
 use React\EventLoop\{LoopInterface, TimerInterface};
-use RPurinton\Framework2\{Log, Error};
+use RPurinton\peacekeeper\{Log, Error};
 
 class Timers
 {

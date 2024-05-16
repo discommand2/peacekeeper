@@ -1,11 +1,11 @@
 <?php
 
-namespace RPurinton\Framework2\Consumers;
+namespace RPurinton\peacekeeper\Consumers;
 
 use Bunny\{Channel, Message};
 use React\EventLoop\LoopInterface;
-use RPurinton\Framework2\{Log, Error};
-use RPurinton\Framework2\RabbitMQ\Consumer as MQConsumer;
+use RPurinton\peacekeeper\{Log, Error};
+use RPurinton\peacekeeper\RabbitMQ\Consumer as MQConsumer;
 
 class Consumer
 {
@@ -17,7 +17,7 @@ class Consumer
     public function init(): bool
     {
         $this->log->debug("Consumer init");
-        $this->mq->connect($this->loop, "framework2", $this->callback(...)) or throw new Error("failed to connect to queue");
+        $this->mq->connect($this->loop, "peacekeeper", $this->callback(...)) or throw new Error("failed to connect to queue");
         return true;
     }
 

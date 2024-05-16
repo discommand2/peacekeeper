@@ -1,11 +1,11 @@
 #!/usr/bin/env php
 <?php
 
-namespace RPurinton\Framework2;
+namespace RPurinton\peacekeeper;
 
 use React\EventLoop\Loop;
-use RPurinton\Framework2\Error;
-use RPurinton\Framework2\Consumers\Timers;
+use RPurinton\peacekeeper\Error;
+use RPurinton\peacekeeper\Consumers\Timers;
 
 $worker_id = $argv[1] ?? 0;
 

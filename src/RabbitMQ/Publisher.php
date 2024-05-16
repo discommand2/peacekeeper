@@ -1,8 +1,8 @@
 <?php
 
-namespace RPurinton\Framework2\RabbitMQ;
+namespace RPurinton\peacekeeper\RabbitMQ;
 
-use RPurinton\Framework2\{Config, Error};
+use RPurinton\peacekeeper\{Config, Error};
 use Bunny\{Client, Channel};
 
 class Publisher

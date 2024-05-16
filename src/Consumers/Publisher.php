@@ -1,9 +1,9 @@
 <?php
 
-namespace RPurinton\Framework2\Consumers;
+namespace RPurinton\peacekeeper\Consumers;
 
-use RPurinton\Framework2\{Log, Error};
-use RPurinton\Framework2\RabbitMQ\Publisher as MQPublisher;
+use RPurinton\peacekeeper\{Log, Error};
+use RPurinton\peacekeeper\RabbitMQ\Publisher as MQPublisher;
 
 class Publisher
 {

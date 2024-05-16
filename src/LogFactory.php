@@ -1,6 +1,6 @@
 <?php
 
-namespace RPurinton\Framework2;
+namespace RPurinton\peacekeeper;
 
 use Monolog\Level;
 use Monolog\Handler\StreamHandler;

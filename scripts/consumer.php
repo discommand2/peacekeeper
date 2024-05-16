@@ -1,12 +1,12 @@
 #!/usr/bin/env php
 <?php
 
-namespace RPurinton\Framework2;
+namespace RPurinton\peacekeeper;
 
 use React\EventLoop\Loop;
-use RPurinton\Framework2\Error;
-use RPurinton\Framework2\RabbitMQ\Consumer as MQConsumer;
-use RPurinton\Framework2\Consumers\Consumer;
+use RPurinton\peacekeeper\Error;
+use RPurinton\peacekeeper\RabbitMQ\Consumer as MQConsumer;
+use RPurinton\peacekeeper\Consumers\Consumer;
 
 $worker_id = $argv[1] ?? 0;
 
