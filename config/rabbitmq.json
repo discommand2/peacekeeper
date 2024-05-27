@@ -1,7 +1,0 @@
-{
-    "host": "127.0.0.1",
-    "vhost": "peacekeeper",
-    "user": "peacekeeper",
-    "password": "peacekeeper",
-    "heartbeat": 1000
-}

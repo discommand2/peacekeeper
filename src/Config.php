@@ -1,6 +1,6 @@
 <?php
 
-namespace RPurinton\peacekeeper;
+namespace Discommand2\PeaceKeeper;
 
 class Config
 {

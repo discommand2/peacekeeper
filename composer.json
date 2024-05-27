@@ -1,14 +1,11 @@
 {
-    "name": "rpurinton/peacekeeper",
-    "description": "PeaceKeeper Project",
+    "name": "discommand2/peacekeeper",
+    "description": "PeaceKeeper Bot for Discord - Manages Server Mutes and Bans",
     "type": "project",
-    "require-dev": {
-        "phpunit/phpunit": "^10.4"
-    },
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "RPurinton\\peacekeeper\\": "src/"
+            "Discommand2\\PeaceKeeper\\": "src/"
         }
     },
     "authors": [
@@ -19,8 +16,6 @@
     ],
     "require": {
         "react/async": "^4.2",
-        "bunny/bunny": "@dev",
-        "monolog/monolog": "^3.5",
         "team-reflex/discord-php": "dev-master"
     }
 }
