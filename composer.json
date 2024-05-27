@@ -1,6 +1,6 @@
 {
     "name": "rpurinton/peacekeeper",
-    "description": "peacekeeper Project Template",
+    "description": "PeaceKeeper Project",
     "type": "project",
     "require-dev": {
         "phpunit/phpunit": "^10.4"
@@ -20,6 +20,7 @@
     "require": {
         "react/async": "^4.2",
         "bunny/bunny": "@dev",
-        "monolog/monolog": "^3.5"
+        "monolog/monolog": "^3.5",
+        "team-reflex/discord-php": "dev-master"
     }
 }
