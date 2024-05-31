@@ -14,8 +14,15 @@ class PeaceKeeper
         echo "PeaceKeeper is here to keep the peace!\n";
     }
 
-    public function run()
+    public function run(): void
     {
+        $this->discord->on(Event::READY, $this->ready(...));
+        $this->discord->run();
         echo "PeaceKeeper is running!\n";
+    }
+
+    public function ready(): void
+    {
+        echo "PeaceKeeper is ready!\n";
     }
 }
