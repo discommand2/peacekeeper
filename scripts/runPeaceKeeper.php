@@ -3,6 +3,9 @@
 
 namespace Discommand2\PeaceKeeper;
 
+use Discord\Discord;
+
 require_once __DIR__ . '/../vendor/autoload.php';
 
-(new PeaceKeeper())->run();
+(new PeaceKeeper(new Discord(Config::get('discord'))))->run();
+
