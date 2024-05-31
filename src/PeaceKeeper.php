@@ -3,9 +3,8 @@
 namespace Discommand2\PeaceKeeper;
 
 use Discord\Discord;
-use Discord\Parts\Channel\Message;
-use Discord\WebSockets\Intents;
 use Discord\WebSockets\Event;
+use stdClass;
 
 class PeaceKeeper
 {
@@ -16,13 +15,19 @@ class PeaceKeeper
 
     public function run(): void
     {
-        $this->discord->on(Event::READY, $this->ready(...));
+        $this->discord->on(Event::READY, $this->event_ready(...));
+        $this->discord->on('raw', $this->event_server_mute(...));
         $this->discord->run();
         echo "PeaceKeeper is running!\n";
     }
 
-    public function ready(): void
+    public function event_ready(): void
     {
         echo "PeaceKeeper is ready!\n";
+    }
+
+    public function event_server_mute(stdClass $message): void
+    {
+        print_r($message);
     }
 }
