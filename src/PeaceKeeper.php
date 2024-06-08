@@ -16,7 +16,7 @@ class PeaceKeeper
     public function run(): void
     {
         $this->discord->on(Event::READY, $this->event_ready(...));
-        $this->discord->on('raw', $this->event_server_mute(...));
+        $this->discord->on(Event::VOICE_STATE_UPDATE, $this->voice_state_update(...));
         $this->discord->run();
         echo "PeaceKeeper is running!\n";
     }
@@ -26,8 +26,9 @@ class PeaceKeeper
         echo "PeaceKeeper is ready!\n";
     }
 
-    public function event_server_mute(stdClass $message): void
+    public function voice_state_update(stdClass $message): void
     {
         print_r($message);
     }
+    
 }
