@@ -4,6 +4,7 @@ namespace Discommand2\PeaceKeeper;
 
 use Discord\Discord;
 use Discord\WebSockets\Event;
+use Discord\Parts\WebSockets\VoiceStateUpdate;
 use stdClass;
 
 class PeaceKeeper
@@ -26,9 +27,8 @@ class PeaceKeeper
         echo "PeaceKeeper is ready!\n";
     }
 
-    public function voice_state_update(stdClass $message): void
+    public function voice_state_update(VoiceStateUpdate $message): void
     {
         print_r($message);
     }
-    
 }
